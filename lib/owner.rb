@@ -23,7 +23,11 @@ class Owner
    @@all.clear
  end
  def cats
-   x = Cat.all.find_all{|pet| pet.owner == self}
-   x
+   gatos = Cat.all.find_all{|pet| pet.owner == self}
+   gatos
  end
+ def dogs 
+   perros = Dog.all.find_all{|pet| pet.owner == self}
+   perros
+end
 end
