@@ -4,5 +4,7 @@ class Owner
     @name = name
     @species = "human"
   end
-
+  def species 
+    @species 
+  end
 end
