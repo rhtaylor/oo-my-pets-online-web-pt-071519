@@ -59,7 +59,6 @@ end
   def list_pets
     gatos = Cat.all.find_all{|pet| pet.owner == self}
     perros = Dog.all.find_all{|pet| pet.owner == self}
-
    "I have #{perros.count} dog(s), and #{gatos.count} cat(s)."
 end
 end
