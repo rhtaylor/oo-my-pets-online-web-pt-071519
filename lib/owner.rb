@@ -44,4 +44,16 @@ end
     gatos = Cat.all.find_all{|pet| pet.owner == self}
     gatos.map{ |cat| cat.mood = "happy"}
   end
+  def sell_pets
+    perros = Dog.all.find_all{|pet| pet.owner == self}
+    perros.map do  |dog| 
+      dog.mood = "nervous"
+      dog.owner = nil
+    end
+    gatos = Cat.all.find_all{|pet| pet.owner == self}
+    gatos.map do |cat| 
+      cat.mood = "nervous"
+      cat.owner = nil
+    end
+    
 end
