@@ -38,7 +38,8 @@ end
   end
   def walk_dog
     perros = Dog.all.find_all{|pet| pet.owner == self}
-    perros
     binding.pry
+    perros
+    
   end
 end
