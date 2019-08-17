@@ -23,7 +23,7 @@ class Owner
    @@all.clear
  end
  def cats
-   x = self.all.find_all{|pet| pet.name == self}
+   x = self.all.find_all{|pet| pet.owner == self}
    x
  end
 end
