@@ -40,6 +40,6 @@ end
     perros = Dog.all.find_all{|pet| pet.owner == self}
     binding.pry
     perros
-    
+
   end
 end
