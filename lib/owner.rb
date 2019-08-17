@@ -39,6 +39,9 @@ end
   def walk_dogs
     perros = Dog.all.find_all{|pet| pet.owner == self}
     perros.map{ |dog| dog.mood = "happy"}
-
+  end
+  def feed_cats 
+    gatos = Cat.all.find_all{|pet| pet.owner == self}
+    gatos.map{ |cat| cat.mood = "happy"}
   end
 end
