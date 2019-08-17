@@ -36,4 +36,9 @@ end
   def buy_dog(dog_name)
     new_dog = Dog.new(dog_name, self)
   end
+  def walk_dog 
+    perros = Dog.all.find_all{|pet| pet.owner == self}
+    perros 
+    binding.pry
+  end
 end
