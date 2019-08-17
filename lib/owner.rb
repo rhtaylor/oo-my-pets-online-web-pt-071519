@@ -23,5 +23,6 @@ class Owner
  end
  def cats
    Cat.all.find{ |cat| cat.owner == self }
+   binding.pry
  end
 end
