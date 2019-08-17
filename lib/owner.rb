@@ -30,7 +30,7 @@ class Owner
    perros = Dog.all.find_all{|pet| pet.owner == self}
    perros
 end
-  def buy_cat
-    new_cat = Cat.new(name, self)
+  def buy_cat(cat_name)
+    new_cat = Cat.new(cat_name, self)
     end
 end
