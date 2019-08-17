@@ -61,3 +61,4 @@ end
     perros = Dog.all.find_all{|pet| pet.owner == self}
     gatos + perros
 end
+end
